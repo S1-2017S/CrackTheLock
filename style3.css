@@ -1,0 +1,35 @@
+html { 
+  background: url(menucss.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+
+
+h1
+{
+	position: relative;
+	left: 765px;
+	margin: 0px;
+	padding: 0px;
+	top: 485px;
+	height: 25%
+	width: 25%
+}
+
+h2
+{
+	position: absolute;
+	left: 770px;
+	margin: 0px;
+	padding: 0px;
+	top: 325px;
+	height: 75%
+	width: 75%
+	
+    
+}
+
+
+

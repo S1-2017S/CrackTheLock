@@ -1,0 +1,68 @@
+html { 
+  background: url(crack1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+}
+
+h1
+{	
+	position: relative;
+	font-size: 99px;
+	font-family: 'Sun Valley - Demo';
+	src: url('Sun Valley - Demo.ttf');
+	margin:0px;
+	padding:0px;
+	left: 800px;
+	color: rgb(255,255,255);
+	top: 10px
+	
+ 
+	
+	}
+
+h2
+{
+	position: relative;
+	left: 1720px;
+	margin: 0px;
+	padding: 0px;
+	top: -365px;
+	font-family: 'Bebas Neue';
+	src: url('Bebas Neue.otf');
+	font-size: 38px;
+
+	}
+
+h4
+{
+	position: relative;
+	left: 1085px;
+	font-family: 'Bebas Neue';
+	src: url('Bebas Neue.otf');
+	font-size: 35px;
+	top: 190px;
+	}
+
+#logo {
+	position: relative;
+	background-image: url(connexion.png);
+	left: -1720px;
+	top: 100px;
+  
+	
+}
+
+#logo2 {
+	position: relative;
+  background-image: url(connexion.png);
+  left: -1720px;
+	top: 100px;
+}
+
+
+
+
+
+
