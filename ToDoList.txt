@@ -1,0 +1,10 @@
+To Do List :
+
+- Résouddre probleme inscription ()
+
+- Résouddre probleme luccidchart ()
+
+- Trouver des images pour la page jeu ()
+
+- Commencer la page jeu ()
+
