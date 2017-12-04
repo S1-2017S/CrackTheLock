@@ -8,3 +8,4 @@ To Do List :
 
 - Commencer la page jeu ()
 
+- Remplacer les href par des requests ()

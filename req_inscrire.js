@@ -1,9 +1,3 @@
-//=========================================================================
-// Traitement de "req_inscrire"
-// Auteur : P. Thiré
-// Version : 09/10/2015
-//=========================================================================
-
 "use strict";
 
 var fs = require("fs");
@@ -54,6 +48,7 @@ var trait = function (req, res, query) {
 	// ON RENVOIT UNE PAGE HTML 
 
 	if(trouve === true) {
+
 		// SI CREATION PAS OK, ON REAFFICHE PAGE FORMULAIRE AVEC ERREUR
 
 		page = fs.readFileSync('inscription.html', 'utf-8');
@@ -64,9 +59,10 @@ var trait = function (req, res, query) {
 		page = page.supplant(marqueurs);
 
 	} else {
+
 		// SI CREATION OK, ON ENVOIE PAGE DE CONFIRMATION
 
-		page = fs.readFileSync('confirmation.html', 'UTF-8');
+		page = fs.readFileSync('accueil.html', 'UTF-8');
 
 		marqueurs = {};
 		marqueurs.pseudo = query.pseudo;
@@ -78,7 +74,5 @@ var trait = function (req, res, query) {
 	res.write(page);
 	res.end();
 };
-
-//---------------------------------------------------------------------------
 
 module.exports = trait;

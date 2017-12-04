@@ -4,10 +4,7 @@ var http = require("http");
 var url = require("url");
 var querystring = require("querystring");
 
-//-------------------------------------------------------------------------
-// DECLARATION DES DIFFERENTS MODULES CORRESPONDANT A CHAQUE ACTION
-//-------------------------------------------------------------------------
-
+var req_commencer = require("./req_commencer.js");
 var req_connexion = require("./req_connexion.js");
 var req_afficher_formulaire_inscription = require("./req_afficher_formulaire_inscription.js");
 var req_inscrire = require("./req_inscrire.js");
@@ -19,10 +16,7 @@ var req_quitter = require("./req_quitter.js");
 var req_retour_menu = require("./req_retour_menu.js");
 var req_deplacement = require("./req_deplacement.js");
 var req_static = require("./req_static.js");
-
-//-------------------------------------------------------------------------
-// FONCTION DE CALLBACK APPELLEE POUR CHAQUE REQUETE
-//-------------------------------------------------------------------------
+var req_erreur = require("./req_erreur.js");
 
 var traite_requete = function (req, res) {
 
@@ -41,6 +35,9 @@ var traite_requete = function (req, res) {
 	try {
 		switch (pathname) {
 			case '/':
+			case '/req_commencer':
+				req_commencer(req, res, query);
+				break;
 			case '/req_connexion':
 				req_connexion(req, res, query);
 				break;
@@ -80,9 +77,6 @@ var traite_requete = function (req, res) {
 	}
 };
 
-//-------------------------------------------------------------------------
-// CREATION ET LANCEMENT DU SERVEUR
-//-------------------------------------------------------------------------
 
 var mon_serveur = http.createServer(traite_requete);
 var port = 5000;
