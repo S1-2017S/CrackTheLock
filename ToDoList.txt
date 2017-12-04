@@ -4,7 +4,7 @@ To Do List :
 
 - Résouddre probleme luccidchart ()
 
-- Trouver des images pour la page jeu (anthnoy)
+- Trouver des images pour la page jeu (anthnoy) X
 
 - Commencer la page jeu ()
 
