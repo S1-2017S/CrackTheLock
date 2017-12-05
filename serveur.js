@@ -9,12 +9,13 @@ var req_connexion = require("./req_connexion.js");
 var req_afficher_formulaire_inscription = require("./req_afficher_formulaire_inscription.js");
 var req_inscrire = require("./req_inscrire.js");
 var req_acces_regles = require("./req_acces_regles.js");
+var req_valider = require("./req_valider.js");
 
 var req_retour = require("./req_retour.js");
 var req_jouer = require("./req_jouer.js");
 var req_quitter = require("./req_quitter.js");
 var req_retour_menu = require("./req_retour_menu.js");
-var req_deplacement = require("./req_deplacement.js");
+var req_deplacement = require("./req_deplacer.js");
 var req_static = require("./req_static.js");
 var req_erreur = require("./req_erreur.js");
 
@@ -37,6 +38,12 @@ var traite_requete = function (req, res) {
 			case '/':
 			case '/req_commencer':
 				req_commencer(req, res, query);
+				break;
+			case '/req_valider':
+				req_valider(req, res, query);
+				break;
+			case '/req_deplacer':
+				req_deplacer(req, res, query);
 				break;
 			case '/req_connexion':
 				req_connexion(req, res, query);
