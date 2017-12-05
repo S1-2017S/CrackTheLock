@@ -7,7 +7,7 @@ html {
 
 body {
 
-	position: relative;
+	position: fixed;
 	left: 635px;
 	margin: 0px;
 	padding: 0px;
@@ -23,7 +23,7 @@ body {
 input[type="text"] {
 
   background-color : #99CCFF; 
-	
+  position: fixed;
 	
 
 }
@@ -33,13 +33,15 @@ input[type="text"] {
 input[type="password"] {
 
   background-color : #99CCFF; 
-	
+  position: relative;
 	
 }
 
 input[type="submit"] {
 
   background-color : #99CCFF; 
+  position: relative;
+
 
 
 }

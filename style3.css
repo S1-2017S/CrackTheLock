@@ -9,7 +9,7 @@ html {
 
 h1
 {
-	position: relative;
+	position: fixed;
 	left: 765px;
 	margin: 0px;
 	padding: 0px;
@@ -20,7 +20,7 @@ h1
 
 h2
 {
-	position: absolute;
+	position: fixed;
 	left: 770px;
 	margin: 0px;
 	padding: 0px;

@@ -7,7 +7,7 @@ html {
 
 body {
 
-	position: relative;
+	position: fixed;
 	font-size: 30px;
 	left: 735px;
 	margin: 0px;
@@ -21,9 +21,11 @@ body {
 	
 }
 
+
 input[type="text"] {
 
   background-color : #99CCFF; 
+  position: fixed;
 	
 	
 
@@ -34,6 +36,7 @@ input[type="text"] {
 input[type="password"] {
 
   background-color : #99CCFF; 
+  position: fixed;
 	
 	
 }
@@ -41,6 +44,7 @@ input[type="password"] {
 input[type="submit"] {
 
   background-color : #99CCFF; 
+  position: fixed;
 
 
 }
