@@ -6,5 +6,5 @@ To Do List :
 
 - Trouver des images pour la page jeu (anthnoy) X
 
-- Commencer la page jeu ()
+- Commencer la page jeu (isaac)
 
