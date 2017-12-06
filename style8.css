@@ -15,16 +15,53 @@ background-size: cover;
 
 table {
 
+position:fixed;
 border: medium solid ;
 border-collapse: collapse;
-position:fixed;
 margin-top:-500px;
+top: 65%;
+left: 33%;
+
+}
+
+ 
+
+#btnhaut {
+
+position: fixed;
+margin-top : 50px;
+top: 33%;
+left: 17.5%;
+
+}
+
+#btnbas {
+
+position: fixed;
+margin-top : 50px;
+top: 43%;
+left: 17.5%;
 
 
+}
+
+#btngauche {
+
+position: fixed;
+margin-top : 50px;
+top: 38.5%;
+left: 12.8%;
  }
 
+#btndroite {
+
+position: fixed;
+margin-top : 50px;
+top: 38.5%;
+left: 22.2%;
 
 
- }
 
-	
+}
+
+}
