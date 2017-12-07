@@ -9,7 +9,7 @@ html {
 h1
 {	
 	position: relative;
-	font-size: 99px;
+	font-size: 59px;
 	font-family: 'Sun Valley - Demo';
 	src: url('Sun Valley - Demo.ttf');
 	margin:0px;
@@ -43,7 +43,6 @@ h4
 	src: url('Bebas Neue.otf');
 	font-size: 35px;
 	top: 190px;
-	
 	}
 
 #logo {
