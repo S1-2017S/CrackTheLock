@@ -8,7 +8,7 @@ html {
 
 h1
 {	
-	position: relative;
+	position: fixed;
 	font-size: 59px;
 	font-family: 'Sun Valley - Demo';
 	src: url('Sun Valley - Demo.ttf');
@@ -24,7 +24,7 @@ h1
 
 h2
 {
-	position: relative;
+	position: fixed;
 	left: 1720px;
 	margin: 0px;
 	padding: 0px;
@@ -37,7 +37,7 @@ h2
 
 h4
 {
-	position: relative;
+	position: fixed;
 	left: 1085px;
 	font-family: 'Bebas Neue';
 	src: url('Bebas Neue.otf');
@@ -46,19 +46,19 @@ h4
 	}
 
 #logo {
-	position: relative;
+	position: fixed;
 	background-image: url(connexion.png);
-	left: -1720px;
+	left: 0px;
 	top: 100px;
   
 	
 }
 
 #logo2 {
-	position: relative;
+	position: fixed;
   background-image: url(connexion.png);
-  left: -1720px;
-	top: 100px;
+  left: 0px;
+	top: 0px;
 }
 
 
