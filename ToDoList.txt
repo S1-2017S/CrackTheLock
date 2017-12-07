@@ -2,7 +2,7 @@ To Do List :
 
 - Résouddre probleme inscription ()
 
-- Résouddre probleme luccidchart ()
+- Résouddre probleme luccidchart () X
 
 - Trouver des images pour la page jeu (anthnoy) X
 
