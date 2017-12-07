@@ -30,7 +30,7 @@ h2
 	padding: 0px;
 	top: -365px;
 	font-family: 'Bebas Neue';
-	src: url('Bebas Neue.otf');
+	src: url('Bebas Neue.otf');	`
 	font-size: 38px;
 
 	}
@@ -38,7 +38,7 @@ h2
 h4
 {
 	position: fixed;
-	left: 1085px;
+	left: 600px;
 	font-family: 'Bebas Neue';
 	src: url('Bebas Neue.otf');
 	font-size: 35px;
@@ -49,8 +49,8 @@ h4
 	position: fixed;
 	background-image: url(connexion.png);
 	left: 0px;
-	top: 100px;
-  
+	top: 90px;
+  	
 	
 }
 
@@ -58,7 +58,7 @@ h4
 	position: fixed;
   background-image: url(connexion.png);
   left: 0px;
-	top: 0px;
+	top: 20px;
 }
 
 
