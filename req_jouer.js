@@ -12,7 +12,7 @@ var trait = function (req, res, query) {
 
 	// affichage du jeu
 
-	page = fs.readFileSync('solo.html', 'utf-8');
+	page = fs.readFileSync('jeu.html', 'utf-8');
 
 	marqueurs = {};
 	marqueurs.erreur = "";
