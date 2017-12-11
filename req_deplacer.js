@@ -2,10 +2,10 @@
 
 var fs = require("fs");
 require('remedial');
-var gauche = require("/gauche.js");
-var droite = require("/droite.js");
-var haut = require("/haut.js");
-var bas = require("/bas.js");
+var gauche = require("./gauche.js");
+var droite = require("./droite.js");
+var haut = require("./haut.js");
+var bas = require("./bas.js");
 
 var trait = function (req, res, query) {
 
@@ -18,7 +18,7 @@ var trait = function (req, res, query) {
 
 	marqueurs = {};
 
-	marqueurs.tab = require("/recupTabHtml.js");
+	marqueurs.tab = require("./recupTabHtml.js");
 
 	//Reconnaitre le déplacement.
 
