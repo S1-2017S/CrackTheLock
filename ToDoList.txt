@@ -1,11 +1,17 @@
 To Do List :
 
-- Résouddre probleme inscription ()
+- Résouddre probleme inscription (anthony) X
 
-- Résouddre probleme luccidchart () X
+- Résouddre probleme luccidchart (anthony) X
 
 - Trouver des images pour la page jeu (anthnoy) X
 
-- Commencer la page jeu (isaac)
+- Commencer la page jeu (isaac) X
 
-- Remplacer les href par des requests ()
+- Remplacer les href par des requests (alex) X
+
+- Mettre une condition d'inscription pour empècher les champs vides ()
+
+- Mettre en place la connexion avec le fichier "membre.json" ()
+
+- Commencer à écrire des maps ()
