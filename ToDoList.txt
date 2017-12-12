@@ -10,8 +10,14 @@ To Do List :
 
 - Remplacer les href par des requests (alex) X
 
-- Mettre une condition d'inscription pour empècher les champs vides ()
+- Mettre une condition d'inscription pour empècher les champs vides (Isaac) X
 
-- Mettre en place la connexion avec le fichier "membre.json" ()
+- Mettre en place la connexion avec le fichier "membre.json" (isaac)
 
-- Commencer à écrire des maps ()
+- Commencer à écrire des maps (alex)
+
+- Ecrire la requete "deplacer (anthony)
+
+- Ecrire la requete "jouer" (yann)
+
+- 
