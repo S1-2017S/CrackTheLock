@@ -8,7 +8,7 @@ var trait = function (req, res, query) {
 	var marqueurs;
 	var page;
 
-	page = fs.readFileSync('connection.html', 'UTF-8');
+	page = fs.readFileSync('membres.json', 'UTF-8');
 
 	marqueurs = {};
 	marqueurs.erreur = "";
