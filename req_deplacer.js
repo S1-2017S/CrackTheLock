@@ -6,6 +6,7 @@ var gauche = require("./gauche.js");
 var droite = require("./droite.js");
 var haut = require("./haut.js");
 var bas = require("./bas.js");
+var conv = require("./image.js");
 
 var fin = 0;
 
@@ -19,8 +20,6 @@ var trait = function (req, res, query) {
 	page = fs.readFileSync('jeu.html', 'UTF-8');
 
 	marqueurs = {};
-
-	marqueurs.tab = require("./recupTabHtml.js");
 
 	//Reconnaitre le déplacement.
 
@@ -49,7 +48,7 @@ var trait = function (req, res, query) {
 
 	//Rendre son apparence à la case précédente.
 
-		//marqueur[x":"y];
+	conv(tab);
 
 	//Tester si le niveau a été fini par le joueur.
 
