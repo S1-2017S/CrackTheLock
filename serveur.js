@@ -32,7 +32,7 @@ var traite_requete = function (req, res) {
 	query = requete.query;
 
         for (var i = 0; i < 9007199254740992; i++){
-            a = 3
+            var a = 3
         }
 
 	// ROUTEUR
