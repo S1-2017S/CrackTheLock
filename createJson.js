@@ -7,7 +7,7 @@ var y = Number (y);
 
 var map =  [["m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m"],
 			["m","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","m"],
-			["m","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","m"],
+			["m","v","v","v","v","s","v","v","v","v","v","v","v","v","v","v","v","v","v","m"],
 			["m","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","m"],
 			["m","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","m"],
 			["m","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","m"],
@@ -40,7 +40,7 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 		} else if ( map[x][y] === "p" ) {
 
-			map[x][y] = {"type":"p","poid":"1","etat":"f"};
+			map[x][y] = {"coor":"map[x][y].c","type":"p","poid":"1","etat":"f"};
 
 		} else if ( map[x][y] === "j" ) {
 
@@ -52,7 +52,7 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 		} else if ( map[x][y] ==="pp" ){
 
-			map[x][y] = {"type":"pp","poid":"0"};
+			map[x][y] = {"coor":"map[x][y].c","type":"pp","poid":"0"};
 		}
 
 	}
@@ -61,4 +61,4 @@ for ( x = 0 ; x < 20 ; x++ ) {
 }
 
 repJSON = JSON.stringify(map);
-fs.writeFileSync("map_2-2.json", repJSON, "UTF-8");
+fs.writeFileSync("map_2-3.json", repJSON, "UTF-8");
