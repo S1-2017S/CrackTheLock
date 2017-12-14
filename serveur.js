@@ -31,7 +31,7 @@ var traite_requete = function (req, res) {
 	pathname = requete.pathname;
 	query = requete.query;
 
-        for (var i = 0; i < 9007199254740; i++){
+        for (var i = 0; i < 9007199254; i++){
             var a = 3
         }
 
