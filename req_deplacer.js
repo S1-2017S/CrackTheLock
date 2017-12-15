@@ -17,6 +17,8 @@ var trait = function (req, res, query) {
 	var dir;
 	var tab;
 
+	tab = JSON.parse(fs.readFileSync("map_" + query.pseudo + ".json","UTF-8"));
+
 	page = fs.readFileSync('jeu.html', 'UTF-8');
 
 	marqueurs = {};
@@ -28,19 +30,19 @@ var trait = function (req, res, query) {
 	//Reconnaitre la nouvelle case.
 	//Faire l'interaction et swap les cases.
 
-	if ( dir === 1 ) {
+	if ( dir == 1 ) {
 
 		tab = gauche(req, res, query, fin);
 
-	} else if ( dir === 2 ) {
+	} else if ( dir == 2 ) {
 
 		tab = haut(req, res, query, fin);
 
-	} else if ( dir === 3 ) {
+	} else if ( dir == 3 ) {
 
 		tab = droite(req, res, query, fin);
 
-	} else if ( dir === 4 ) {
+	} else if ( dir == 4 ) {
 
 		tab = bas(req, res, query, fin);
 
@@ -48,7 +50,7 @@ var trait = function (req, res, query) {
 
 	//Rendre son apparence à la case précédente.
 
-	conv(tab);
+	marqueurs = conv(tab);
 
 	//Tester si le niveau a été fini par le joueur.
 

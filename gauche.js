@@ -19,14 +19,14 @@ var deplace = function (req, res, query, fin) {
 			tab.m[tab.j.l][tab.j.c].poid = 1;
 
 		} else if ( tab.m[tab.j.l][tab.j.c-1].type == "p" ) {
-
-			tab.m[tab.j.l][tab.j.c].poid = 0;
-			tab.m[tab.j.l][tab.j.c-2].type = "j";
-			tab.m[tab.j.l][tab.j.c].type = tab.m[tab.j.l][tab.j.c].typeo;
-			tab.m[tab.j.l][tab.j.c-1].type = "p";
-			tab.j.c = tab.j.c - 2;
-			tab.m[tab.j.l][tab.j.c].poid = 1;
-
+			if ( tab.m[tab.j.l][tab.j.c-1].etat == "o" ) {
+				tab.m[tab.j.l][tab.j.c].poid = 0;
+				tab.m[tab.j.l][tab.j.c-2].type = "j";
+				tab.m[tab.j.l][tab.j.c].type = tab.m[tab.j.l][tab.j.c].typeo;
+				tab.m[tab.j.l][tab.j.c-1].type = "p";
+				tab.j.c = tab.j.c - 2;
+				tab.m[tab.j.l][tab.j.c].poid = 1;
+			}
 		} else if ( tab.m[tab.j.l][tab.j.c-1].type == "s" ) {
 
 			fin++;
