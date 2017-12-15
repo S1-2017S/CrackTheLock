@@ -15,7 +15,7 @@ var req_retour = require("./req_retour.js");
 var req_jouer = require("./req_jouer.js");
 var req_quitter = require("./req_quitter.js");
 var req_retour_menu = require("./req_retour_menu.js");
-var req_deplacement = require("./req_deplacer.js");
+var req_deplacer = require("./req_deplacer.js");
 var req_static = require("./req_static.js");
 var req_erreur = require("./req_erreur.js");
 
@@ -69,8 +69,8 @@ var traite_requete = function (req, res) {
 			case '/req_retour_menu':
 				req_retour_menu(req, res, query);
 				break;
-			case '/req_deplacement':
-				req_deplacement(req, res, query);
+			case '/req_deplacer':
+				req_deplacer(req, res, query);
 				break;
 			default:
 				req_static(req, res, pathname);

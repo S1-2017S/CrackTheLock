@@ -12,6 +12,7 @@ var conv = function (tab) {
 	var im4 = "plaquepression16x16.png";
 	var im5 = "door.png";
 	var im6 = "doorclosed.png";
+	var im7 = "sortie.png";
 	var marqueurs = {};
 
 	for ( x = 0 ; x < 20 ; x++ ) {
@@ -27,10 +28,12 @@ var conv = function (tab) {
 				marqueurs[x + ":" + y] = im4 ;
 			} else if ( tab.m[x][y].type === "p" ) {
 				if ( tab.m[x][y].etat === "f" ) {
-					marqueurs[x + ":" + y] = im6;
+					marqueurs[x + ":" + y] = im5;
 				} else if ( tab.m[x][y].etat === "o" ) {
-					marqueurs[x + ":" + y] = im5 ;
+					marqueurs[x + ":" + y] = im6;
 				}
+			} else if ( tab.m[x][y].type === "s" ) {
+				marqueurs[x + ":" + y] = im7;
 			}
 
 		}

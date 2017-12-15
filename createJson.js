@@ -48,7 +48,7 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 		} else if ( map[x][y] === "j" ) {
 
-			map[x][y] = {"typeo":"j","type":"j","poid":"1","l":"3","c":"1"};
+			map[x][y] = {"typeo":"v","type":"j","poid":"1","l":"3","c":"1"};
 
 		} else if ( map[x][y] === "s" ) {
 
