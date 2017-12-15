@@ -38,7 +38,7 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 			map[x][y] = {"typeo":"v","type":"v","poid":"0"};
 
-		} else if ( map[x][y] === "p" ) {
+		} else if ( map[x][y].t === "p" ) {
 
 			map[x][y] = {"coor":"map[x][y].c","typeo":"p","type":"p","poid":"1","etat":"f"};
 
@@ -50,7 +50,7 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 			map[x][y] = {"typeo":"s","type":"s","poid":"1","fin":"1"};
 
-		} else if ( map[x][y] ==="pp" ){
+		} else if ( map[x][y].t ==="pp" ){
 
 			map[x][y] = {"coor":"map[x][y].c","typeo":"pp","type":"pp","poid":"0"};
 		}

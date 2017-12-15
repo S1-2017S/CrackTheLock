@@ -38,43 +38,30 @@ var traite_requete = function (req, res) {
 			case '/':
 			case '/req_commencer':
 				req_commencer(req, res, query);
-				break;
 			case '/req_valider':
 				req_valider(req, res, query);
-				break;
 			case '/req_deplacer':
 				req_deplacer(req, res, query);
-				break;
 			case '/req_connexion':
 				req_connexion(req, res, query);
-				break;
 			case '/req_afficher_formulaire_inscription':
 				req_afficher_formulaire_inscription(req, res, query);
-				break;
 			case '/req_inscrire':
 				req_inscrire(req, res, query);
-				break;
 			case '/req_acces_regles':
 				req_acces_regles(req, res, query);
-				break;
 			case '/req_retour':
 				req_retour(req, res, query);
-				break;
 			case '/req_jouer':
 				req_jouer(req, res, query);
-				break;
 			case '/req_quitter':
 				req_quitter(req, res, query);
-				break;
 			case '/req_retour_menu':
 				req_retour_menu(req, res, query);
-				break;
 			case '/req_deplacement':
 				req_deplacement(req, res, query);
-				break;
 			default:
 				req_static(req, res, pathname);
-				break;
 		}
 	} catch (e) {
 		console.log('Erreur : ' + e.stack);

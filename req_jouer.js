@@ -3,6 +3,7 @@
 var fs = require("fs");
 require('remedial');
 var map = JSON.parse(fs.readFileSync("map_2-4.json","UTF-8"));
+var conv = require("./image.js");
 
 var trait = function (req, res, query) {
 	
