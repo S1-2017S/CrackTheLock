@@ -4,6 +4,10 @@ var fs = require("fs");
 var repJSON;
 var x = Number (x);
 var y = Number (y);
+var tab = {};
+var j = {}
+j.l = 2;
+j.c = 4;
 
 var map =  [["m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m"],
 			["m","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","v","m"],
@@ -60,5 +64,8 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 }
 
-repJSON = JSON.stringify(map);
+tab.j = j;
+tab.m = map;
+
+repJSON = JSON.stringify(tab);
 fs.writeFileSync("map_2-4.json", repJSON, "UTF-8");

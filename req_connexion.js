@@ -7,13 +7,43 @@ var trait = function (req, res, query) {
 
 	var marqueurs;
 	var page;
+	var pseudo;
+	var password;
+	var contenu_fichier;
+	var listeMembres;
+	var i;
+	var trouve;
 
-	page = fs.readFileSync('membres.json', 'UTF-8');
+	listeMembres = JSON.parse(fs.readFileSync("membres.json", 'utf-8'));
 
-	marqueurs = {};
-	marqueurs.erreur = "";
-	marqueurs.pseudo = "";
-	page = page.supplant(marqueurs);
+	trouve = false;
+	i = 0;
+	while(i<listeMembres.length && trouve === false) {
+
+		if(listeMembres[i].pseudo === query.pseudo) {
+
+			trouve = true;
+
+		}
+
+		i++;
+
+	} if(trouve === true) {
+
+		if(listeMembres[i].password === query.password) {
+		}
+
+	} else {
+
+		page = fs.readFileSync('connexion.html', 'UTF-8');
+
+		marqueurs = {};
+		marqueurs.pseudo = query.pseudo;
+		marqueurs.password = query.password;
+		marqueurs.erreur = "ERREUR : pseudo ou password incorrect"
+		page = page.supplant(marqueurs);
+
+	}
 
 	res.writeHead(200, {'Content-Type': 'text/html'});
 	res.write(page);
