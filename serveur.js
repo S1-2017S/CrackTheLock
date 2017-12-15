@@ -10,7 +10,7 @@ var req_afficher_formulaire_inscription = require("./req_afficher_formulaire_ins
 var req_inscrire = require("./req_inscrire.js");
 var req_acces_regles = require("./req_acces_regles.js");
 var req_valider = require("./req_valider.js");
-
+var req_afficher_connection = require("./req_afficher_connection.js");
 var req_retour = require("./req_retour.js");
 var req_jouer = require("./req_jouer.js");
 var req_quitter = require("./req_quitter.js");
@@ -38,6 +38,9 @@ var traite_requete = function (req, res) {
 			case '/':
 			case '/req_commencer':
 				req_commencer(req, res, query);
+				break;
+			case '/req_afficher_connection':
+				req_afficher_connection(req, res, query);
 				break;
 			case '/req_valider':
 				req_valider(req, res, query);
