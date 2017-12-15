@@ -22,6 +22,7 @@ var trait = function (req, res, query) {
 	page = fs.readFileSync('jeu.html', 'UTF-8');
 
 	marqueurs = {};
+	marqueurs.pseudo = query.pseudo;
 
 	//Reconnaitre le déplacement.
 

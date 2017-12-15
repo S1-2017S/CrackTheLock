@@ -30,18 +30,28 @@ var trait = function (req, res, query) {
 
 	} if(trouve === true) {
 
-		if(listeMembres[i].password === query.password) {
+		if (listeMembres[i].password === query.password) {
+			page = fs.readFileSync('menu.html', 'UTF-8');
+			marqueurs = {};
+			marqueurs.pseudo = query.pseudo;
+			page = page.supplant(marqueurs);
+		} else {
+			page = fs.readFileSync('connection.html', 'UTF-8');
+			marqueurs = {};
+			marqueurs.pseudo = query.pseudo;
+			marqueurs.erreur = "ERREUR : pseudo ou password incorrect"
+				page = page.supplant(marqueurs);
 		}
 
 	} else {
 
-		page = fs.readFileSync('connexion.html', 'UTF-8');
+		page = fs.readFileSync('connection.html', 'UTF-8');
 
 		marqueurs = {};
 		marqueurs.pseudo = query.pseudo;
 		marqueurs.password = query.password;
 		marqueurs.erreur = "ERREUR : pseudo ou password incorrect"
-		page = page.supplant(marqueurs);
+			page = page.supplant(marqueurs);
 
 	}
 
