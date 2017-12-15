@@ -12,12 +12,22 @@ To Do List :
 
 - Mettre une condition d'inscription pour empècher les champs vides (Isaac) X
 
-- Mettre en place la connexion avec le fichier "membre.json" (isaac)
+- Mettre en place la connexion avec le fichier "membre.json" (Anthony) X
 
-- Commencer à écrire des maps (alex)
+- Commencer à écrire des maps (alex) 
 
-- Ecrire la requete "deplacer (anthony)
+- Ecrire la requete "deplacer (anthony)X
 
-- Ecrire la requete "jouer" (yann)
+- Ecrire la requete "jouer" (Anthony) X
+
+- Regler le pb du menu (Isaac) X
+
+- Suivi du pseudo (Anthony) 
+
+- Changer la position des boutons de la page d'accueil (Isaac) 
+
+- Trouver une image de levier (Isaac)
 
 - 
+
+
