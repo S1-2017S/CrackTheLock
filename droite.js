@@ -68,8 +68,9 @@ var deplace = function (req, res, query, fin) {
 		}
 
 	}
-
-	return tab;
+	
+	fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
+	return fin;
 
 }
 
