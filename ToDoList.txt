@@ -22,12 +22,18 @@ To Do List :
 
 - Regler le pb du menu (Isaac) X
 
-- Suivi du pseudo (Anthony) 
+- Suivi du pseudo (Anthony) X
 
 - Changer la position des boutons de la page d'accueil (Isaac) 
 
 - Trouver une image de levier (Isaac)
 
-- 
+- Requete vers confirmation.html (alex)
 
+- coder porte de sortie (anthony)
 
+- coder changement de map (anthony)
+
+- coder fin de jeu (anthony)
+
+- suivi du pseudo sur les pages manquantes
