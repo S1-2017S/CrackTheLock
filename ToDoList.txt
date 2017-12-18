@@ -35,3 +35,5 @@ To Do List :
 - coder changement de map (anthony)
 
 - coder fin de jeu (anthony)
+
+- suivi du pseudo sur les pages manquantes
