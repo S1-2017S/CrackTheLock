@@ -4,14 +4,15 @@ var fs = require("fs");
 var repJSON;
 var x = Number (x);
 var y = Number (y);
+var tr;
 var tab = {};
 var j = {}
 j.l = 2;
-j.c = 4;
+j.c = 2;
 
 var map =  [["m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m"],
 			["m","v","v","v","v","m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
-			["m","v","j","v",{'t':"l",'c':"1"},"m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
+			["m","v","j","v","v",{'t':"l",'c':"1"},"v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
 			["m","v","v","v","v","m","v",{'t':"pp",'c':"6"},"v","v",{'t':"p",'c':"5"},"v","v","v","v","v",{'t':"pp",'c':"5"},"v","v","m"],
 			["m","v","v","v","v","m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
 			["m","m",{'t':"p",'c':"1"},"m","m","m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
@@ -25,9 +26,9 @@ var map =  [["m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m"
 			["m","v","v","v","m","m","m","m","m","m","v","v","v","m","m","v","v","v","v","m"],
 			["m","v","v","v",{'t':"p",'c':"2"},"v","m","v","v",{'t':"p",'c':"3"},"v","v","v","m","m","m",{'t':"p",'c':"8"},"m","m","m"],
 			["m","v","v","v","m","v","m","v","m","m","v","v","v","m","v","v","v","v","v","m"],
-			["m","v","v","v","m","v","m",{'t':"pp",'c':"3"},"m","m","v","v","v",{'t':"p",'c':"4"},"v","v","v","v","l","m"],
+			["m","v","v","v","m","v","m",{'t':"pp",'c':"3"},"m","m","v","v","v",{'t':"p",'c':"4"},"v","v","v","v","v",{'t':"l",'c':"8"}],
 			["m","v","v","v","m","v","m","v","m","m","v","v","v","m","v","v","v","v","v","m"],
-			["m","v","v","v","m","v","v","v",{'t':"l",'c':"4"},"m","v","v","v","m","v","v","v","v","v","m"],
+			["m","v","v","v","m","v","v","v","v",{'t':"l",'c':"4"},"v","v","v","m","v","v","v","v","v","m"],
 			["m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m"]];
 
 for ( x = 0 ; x < 20 ; x++ ) {
@@ -44,7 +45,8 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 		} else if ( map[x][y].t === "p" ) {
 
-			map[x][y] = {"coor":"map[x][y].c","typeo":"p","type":"p","poid":"1","etat":"f"};
+			tr = map[x][y].c;
+			map[x][y] = {"coor":tr,"typeo":"p","type":"p","poid":"1","etat":"f"};
 
 		} else if ( map[x][y] === "j" ) {
 
@@ -56,11 +58,13 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 		} else if ( map[x][y].t ==="pp" ){
 
-			map[x][y] = {"coor":"map[x][y].c","typeo":"pp","type":"pp","poid":"0"};
+			tr = map[x][y].c;
+			map[x][y] = {"coor":tr,"typeo":"pp","type":"pp","poid":"0"};
 		}
 		  else if ( map[x][y].t ==="l" ){
 		  	
-			map[x][y] = {"coor":"map[x][y].c","typeo":"l","type":"l","poid":"0"};
+			tr = map[x][y].c;
+			map[x][y] = {"coor":tr,"typeo":"l","type":"l","poid":"0","etat":"f"};
 		}
 		
 	}

@@ -44,7 +44,7 @@ var deplace = function (req, res, query, fin) {
 							if ( tab.m[x][y].etat == "f" ) {
 
 								tab.m[x][y].etat = "o";
-			
+
 							} else if ( tab.m[x][y].etat == "o" ) {
 
 								tab.m[x][y].etat = "f";
@@ -65,8 +65,34 @@ var deplace = function (req, res, query, fin) {
 			tab.j.c--;
 			tab.m[tab.j.l][tab.j.c-1].poid = 1;
 
+
+		} else if ( tab.m[tab.j.l][tab.j.c-1].type == "l" ) {
+
+			for (x = 0 ; x < 20 ; x++ ) {
+
+				for ( y = 0 ; y < 20 ; y++ ) {
+
+					if ( tab.m[x][y].type == "p" ) {
+
+						if ( tab.m[tab.j.l][tab.j.c-1].coor == tab.m[x][y].coor ) {
+
+							if ( tab.m[x][y].etat == "f" ) {
+
+								tab.m[x][y].etat = "o";
+								tab.m[tab.j.l][tab.j.c-1].etat = "o";
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
 		}
-	
+
 	}
 
 	fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");

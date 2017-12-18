@@ -18,10 +18,7 @@ var trait = function (req, res, query) {
 	var map;
 	var fin = 0;
 
-	tab = JSON.parse(fs.readFileSync("map_" + query.pseudo + ".json","UTF-8"));
-	tab.lv = Number(tab.lv);
 	page = fs.readFileSync('jeu.html', 'UTF-8');
-	fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 
 	marqueurs = {};
 
@@ -52,6 +49,7 @@ var trait = function (req, res, query) {
 
 	//Rendre son apparence à la case précédente.
 
+	tab = JSON.parse(fs.readFileSync("map_" + query.pseudo + ".json","UTF-8"));
 	tab.lv = Number(tab.lv);
 	console.log("fin = " + fin);
 	console.log("lv = " + tab.lv);
@@ -59,7 +57,7 @@ var trait = function (req, res, query) {
 	//Tester si le niveau a été fini par le joueur.
 
 	if ( fin === 1 ) {
-		tab = JSON.parse(fs.readFileSync("map_" + query.pseudo + ".json","UTF-8"));
+
 		tab.lv++;
 		console.log("lv = " + tab.lv);
 		console.log("fin = " + fin);

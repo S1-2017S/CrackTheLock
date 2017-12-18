@@ -12,6 +12,8 @@ var trait = function (req, res, query) {
 
 	map = JSON.parse(fs.readFileSync("map_2-5.json","UTF-8"));
 
+	map.lv = 0;
+
 	page = fs.readFileSync('jeu.html', 'utf-8');
 
 	marqueurs = {};

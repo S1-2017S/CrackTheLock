@@ -65,6 +65,31 @@ var deplace = function (req, res, query, fin) {
 			tab.j.l++;
 			tab.m[tab.j.l+1][tab.j.c].poid = 1;
 
+		} else if ( tab.m[tab.j.l+1][tab.j.c].type == "l" ) {
+
+			for (x = 0 ; x < 20 ; x++ ) {
+
+				for ( y = 0 ; y < 20 ; y++ ) {
+
+					if ( tab.m[x][y].type == "p" ) {
+
+						if ( tab.m[tab.j.l+1][tab.j.c].coor == tab.m[x][y].coor ) {
+
+							if ( tab.m[x][y].etat == "f" ) {
+
+								tab.m[x][y].etat = "o";
+								tab.m[tab.j.l+1][tab.j.c].etat = "o";
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
 		}
 
 	}

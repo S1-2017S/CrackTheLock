@@ -35,10 +35,10 @@ var conv = function (tab) {
 					marqueurs[x + ":" + y] = im6;
 				}
 			} else if ( tab.m[x][y].type === "l" ) {
-				if ( tab.m[x][x].etat === "f" ) {
-					marqueurs[x + ":" + y] = im9
+				if ( tab.m[x][y].etat === "f" ) {
+					marqueurs[x + ":" + y] = im9;
 				} else if ( tab.m[x][y].etat === "o") {
-					marqueurs[x + ":" + y] = im8
+					marqueurs[x + ":" + y] = im8;
 				}
 			} else if ( tab.m[x][y].type === "s" ) {
 				marqueurs[x + ":" + y] = im7;
