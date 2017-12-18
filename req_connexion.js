@@ -28,7 +28,11 @@ var trait = function (req, res, query) {
 
 		i++;
 
-	} if(trouve === true) {
+	}
+	
+	i--;
+
+	if(trouve === true) {
 
 		if (listeMembres[i].password === query.password) {
 			page = fs.readFileSync('menu.html', 'UTF-8');

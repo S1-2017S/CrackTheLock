@@ -22,7 +22,6 @@ var trait = function (req, res, query) {
 	page = fs.readFileSync('jeu.html', 'UTF-8');
 
 	marqueurs = {};
-	marqueurs.pseudo = query.pseudo;
 
 	//Reconnaitre le déplacement.
 
@@ -52,6 +51,7 @@ var trait = function (req, res, query) {
 	//Rendre son apparence à la case précédente.
 
 	marqueurs = conv(tab);
+	marqueurs.pseudo = query.pseudo;
 
 	//Tester si le niveau a été fini par le joueur.
 

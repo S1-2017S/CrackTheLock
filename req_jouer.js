@@ -15,14 +15,13 @@ var trait = function (req, res, query) {
 	page = fs.readFileSync('jeu.html', 'utf-8');
 
 	marqueurs = {};
-	marqueurs.pseudo = query.pseudo;
 
 	fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(map),"UTF-8");
 
 	marqueurs = conv(map);
-
+	marqueurs.pseudo = query.pseudo;
 	page = page.supplant(marqueurs);
-
+	console.log(marqueurs.pseudo +" "+ query.pseudo);
 	res.writeHead(200, {'Content-Type': 'text/html'});
 	res.write(page);
 	res.end();
