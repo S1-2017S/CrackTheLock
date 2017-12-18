@@ -10,7 +10,7 @@ var trait = function (req, res, query) {
 	var page;
 	var map;
 
-	map = JSON.parse(fs.readFileSync("map_2-4.json","UTF-8"));
+	map = JSON.parse(fs.readFileSync("map_2-5.json","UTF-8"));
 
 	page = fs.readFileSync('jeu.html', 'utf-8');
 
