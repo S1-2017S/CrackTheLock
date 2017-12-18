@@ -13,6 +13,8 @@ var conv = function (tab) {
 	var im5 = "door.png";
 	var im6 = "doorclosed.png";
 	var im7 = "sortie.png";
+	var im8	= "mecanisme1.png";
+	var im9	= "mecanisme2.png";
 	var marqueurs = {};
 
 	for ( x = 0 ; x < 20 ; x++ ) {
@@ -31,6 +33,12 @@ var conv = function (tab) {
 					marqueurs[x + ":" + y] = im5;
 				} else if ( tab.m[x][y].etat === "o" ) {
 					marqueurs[x + ":" + y] = im6;
+				}
+			} else if ( tab.m[x][y].type === "l" ) {
+				if ( tab.m[x][x].etat === "f" ) {
+					marqueurs[x + ":" + y] = im9
+				} else if ( tab.m[x][y].etat === "o") {
+					marqueurs[x + ":" + y] = im8
 				}
 			} else if ( tab.m[x][y].type === "s" ) {
 				marqueurs[x + ":" + y] = im7;
