@@ -39,6 +39,7 @@ var trait = function (req, res, query) {
 		i++;
 	}
 
+
 	// ON RENVOIT UNE PAGE HTML 
 
 	if(trouve === false) {
