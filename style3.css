@@ -9,18 +9,18 @@ html {
 
 h1
 {
-	position: fixed;
+	position: relative;
 	left: 765px;
 	margin: 0px;
 	padding: 0px;
-	top: 485px;
+	top: 85px;
 	height: 25%
 	width: 25%
 }
 
 h2
 {
-	position: fixed;
+	position: absolute;
 	left: 770px;
 	margin: 0px;
 	padding: 0px;
@@ -29,6 +29,25 @@ h2
 	width: 75%
 	
     
+}
+
+
+#jouer {
+
+position: fixed;
+margin-top : 50px;
+top: 33.5%;
+left: 39.2%;
+
+}
+
+#regles {
+
+position: fixed;
+margin-top : 50px;
+top: 57.5%;
+left: 39.2%;
+
 }
 
 
