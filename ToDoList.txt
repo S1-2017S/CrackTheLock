@@ -28,7 +28,7 @@ To Do List :
 
 - Trouver une image de levier (Isaac) X
 
-- Requete vers confirmation.html (alex)
+- Requete vers confirmation.html (alex) X
 
 - coder porte de sortie (anthony) X
 
@@ -36,18 +36,20 @@ To Do List :
 
 - coder fin de jeu (anthony) X
 
-- suivi du pseudo sur les pages manquantes ()
+- suivi du pseudo sur les pages manquantes () X
 
-- element de gameplay "collectible" (anthony)
+- element de gameplay "collectible" (anthony) X
 
-- element de gameplay "fosse-trape" (anthony)
+- element de gameplay "fosse-trape" (anthony) X
 
-- mettre un boutton quitter le jeu (isaac)
+- mettre un boutton quitter le jeu (isaac) O
 
-- mettre un boutton restart le niveau ()
+- mettre un boutton restart le niveau (anthony) O
 
 - continuer à écrire les maps (alex)
 
 - mettre un commentaire à chaque code du git ()
 
 - réécrire entierement la page de règles ()
+
+- MAJ lucidchart (alex) O

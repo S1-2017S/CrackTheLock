@@ -46,10 +46,21 @@ for ( x = 0 ; x < 20 ; x++ ) {
 			tr = map[x][y].c;
 			map[x][y] = {"coor":tr,"typeo":"p","type":"p","poid":"1","etat":"f"};
 
+		} else if ( map[x][y] === "c" ) {
+
+			tr = map[x][y].c;
+			map[x][y] = {"coor":tr,"typeo":"v","type":"c","poid":"0"}
+
+		} else if ( map[x][y] === "ft" ) {
+
+			map[x][y] = {"typeo":"ft","type":"v","poid":"0"};
+
 		} else if ( map[x][y] === "j" ) {
 
 			j.l = x;
+			j.lo = x;
 			j.c = y;
+			j.co = y;
 			map[x][y] = {"typeo":"v","type":"j","poid":"1","l":"3","c":"1"};
 
 		} else if ( map[x][y] === "s" ) {
