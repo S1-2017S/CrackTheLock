@@ -4,7 +4,7 @@ var http = require("http");
 var url = require("url");
 var querystring = require("querystring");
 
-var req_accueil = require("./req_accueil.js");
+var req_accueil = require("./req_retour_accueil.js");
 var req_commencer = require("./req_commencer.js");
 var req_connexion = require("./req_connexion.js");
 var req_afficher_formulaire_inscription = require("./req_afficher_formulaire_inscription.js");
@@ -40,7 +40,7 @@ var traite_requete = function (req, res) {
 			case '/req_commencer':
 				req_commencer(req, res, query);
 				break;
-			case '/req_accueil':
+			case '/req_retour_accueil':
 				req_accueil(req, res, query);
 				break;
 			case '/req_afficher_connection':

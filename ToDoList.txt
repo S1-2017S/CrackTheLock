@@ -28,7 +28,7 @@ To Do List :
 
 - Trouver une image de levier (Isaac) X
 
-- Requete vers confirmation.html (alex)
+- Requete vers confirmation.html (alex) X
 
 - coder porte de sortie (anthony) X
 
