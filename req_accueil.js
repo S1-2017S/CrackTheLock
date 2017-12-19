@@ -20,6 +20,4 @@
 	 res.end();
 }
 	 
-	 module.exports = trait;
-	                                                                                                                      
-	                                              
+	 module.exports = trait;                      
