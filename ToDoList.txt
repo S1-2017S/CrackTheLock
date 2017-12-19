@@ -47,3 +47,5 @@ To Do List :
 - mettre un boutton restart le niveau ()
 
 - continuer à écrire les maps (alex)
+
+- mettre un commentaire à chaque code du git ()
