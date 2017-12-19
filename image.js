@@ -1,5 +1,3 @@
-// gfdsgdgfdgsfdbgdfbfgbgdf
-
 "use strict"
 
 var conv = function (tab) {
@@ -15,6 +13,8 @@ var conv = function (tab) {
 	var im7 = "sortie.png";
 	var im8	= "mecanisme1.png";
 	var im9	= "mecanisme2.png";
+	var im10 = "clef1.png";
+	var im11 = "dirthole.png";
 	var marqueurs = {};
 
 	for ( x = 0 ; x < 20 ; x++ ) {
@@ -26,8 +26,16 @@ var conv = function (tab) {
 				marqueurs[x + ":" + y] = im1 ;
 			} else if ( tab.m[x][y].type === "j" ) { 
 				marqueurs[x + ":" + y] = im2 ;
-			} else if ( tab.m[x][y].type === "pp" ) { 
+			} else if ( tab.m[x][y].type === "pp" ) {
 				marqueurs[x + ":" + y] = im4 ;
+			} else if ( tab.m[x][y].type === "c" ) {
+				marqueurs[x + ":" + y] = im10;
+			} else if ( tab.m[x][y].type === "ft" ) {
+				if ( tab.m[x][y].etat === "f" ) {
+					marqueurs[x + ":" + y] = im1;
+				} else if ( tab.m[x][y].etat === "o" ) {
+					marqueurs[x + ":" + y] = im11;
+				}
 			} else if ( tab.m[x][y].type === "p" ) {
 				if ( tab.m[x][y].etat === "f" ) {
 					marqueurs[x + ":" + y] = im5;

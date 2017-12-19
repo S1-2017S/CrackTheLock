@@ -11,7 +11,7 @@ var j = {}
 var map =  [["m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m"],
 			["m","v","v","v","v","m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
 			["m","v","j","v","v",{'t':"l",'c':"1"},"v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
-			["m","v","v","v","v","m","v",{'t':"pp",'c':"6"},"v","v",{'t':"p",'c':"5"},"v","v","v","v","v",{'t':"pp",'c':"5"},"v","v","m"],
+			["m",{'t':"c",'c':"1"},"v","v","v","m","v",{'t':"pp",'c':"6"},"v","v",{'t':"p",'c':"5"},"v","v","v","v","v",{'t':"pp",'c':"5"},"v","v","m"],
 			["m","v","v","v","v","m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
 			["m","m",{'t':"p",'c':"1"},"m","m","m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
 			["m","v","v","v","m","m","m","m","m","m","m","m","v","v","v","v","v","v","v","m"],
@@ -46,14 +46,14 @@ for ( x = 0 ; x < 20 ; x++ ) {
 			tr = map[x][y].c;
 			map[x][y] = {"coor":tr,"typeo":"p","type":"p","poid":"1","etat":"f"};
 
-		} else if ( map[x][y] === "c" ) {
+		} else if ( map[x][y].t === "c" ) {
 
 			tr = map[x][y].c;
 			map[x][y] = {"coor":tr,"typeo":"v","type":"c","poid":"0"}
 
 		} else if ( map[x][y] === "ft" ) {
 
-			map[x][y] = {"typeo":"ft","type":"v","poid":"0"};
+			map[x][y] = {"typeo":"ft","type":"ft","poid":"0","etat":"f"};
 
 		} else if ( map[x][y] === "j" ) {
 
