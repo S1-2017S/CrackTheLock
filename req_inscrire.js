@@ -61,7 +61,7 @@ var trait = function (req, res, query) {
 
 		// SI CREATION OK, ON ENVOIE PAGE DE CONFIRMATION
 
-		page = fs.readFileSync('accueil.html', 'UTF-8');
+		page = fs.readFileSync('confirmation.html', 'UTF-8');
 
 		marqueurs = {};
 		marqueurs.pseudo = query.pseudo;
