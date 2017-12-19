@@ -7,8 +7,6 @@ var y = Number (y);
 var tr;
 var tab = {};
 var j = {}
-j.l = 2;
-j.c = 2;
 
 var map =  [["m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m","m"],
 			["m","v","v","v","v","m","v","v","v","v","m","v","v","v","v","v","v","v","v","m"],
@@ -50,6 +48,8 @@ for ( x = 0 ; x < 20 ; x++ ) {
 
 		} else if ( map[x][y] === "j" ) {
 
+			j.l = x;
+			j.c = y;
 			map[x][y] = {"typeo":"v","type":"j","poid":"1","l":"3","c":"1"};
 
 		} else if ( map[x][y] === "s" ) {
@@ -64,7 +64,7 @@ for ( x = 0 ; x < 20 ; x++ ) {
 		  else if ( map[x][y].t ==="l" ){
 		  	
 			tr = map[x][y].c;
-			map[x][y] = {"coor":tr,"typeo":"l","type":"l","poid":"0","etat":"f"};
+			map[x][y] = {"coor":tr,"typeo":"l","type":"l","poid":"1","etat":"f"};
 		}
 		
 	}
