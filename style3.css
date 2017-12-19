@@ -9,13 +9,14 @@ html {
 
 h1
 {
-	position: relative;
-	left: 765px;
+	position: fixed;
+	left: 0px;
 	margin: 0px;
 	padding: 0px;
-	top: 85px;
+	top: 15px;
 	height: 25%
 	width: 25%
+	text-shadow: 1px 1px white;
 }
 
 h2
@@ -47,6 +48,7 @@ position: fixed;
 margin-top : 50px;
 top: 57.5%;
 left: 39.2%;
+size: 80%;
 
 }
 

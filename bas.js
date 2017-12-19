@@ -10,7 +10,7 @@ var deplace = function (req, res, query, fin) {
 
 	if ( tab.j.c > 0 ) {
 
-		if ( tab.m[tab.j.l+1][tab.j.c].type == "v" ) {
+		if ( tab.m[tab.j.l+1][tab.j.c].type == "v" && tab.m[tab.j.l+1][tab.j.c].typeo == "v" ) {
 
 			tab.m[tab.j.l][tab.j.c].poid = 0;
 			tab.m[tab.j.l+1][tab.j.c].type = "j";
@@ -91,6 +91,52 @@ var deplace = function (req, res, query, fin) {
 			}
 
 		}
+
+	} else if ( tab.m[tab.j.l+1][tab.j.c].type == "c" ) {
+
+		tab.m[tab.j.l+1][tab.j.c].type = "j";
+		tab.m[tab.j.l][tab.j.c].poid = 0;
+		tab.m[tab.j.l][tab.j.c].type = tab.m[tab.j.l][tab.j.c].typeo;
+		tab.j.l++;
+		tab.m[tab.j.l+1][tab.j.c].poid = 1;
+
+		for (x = 0 ; x < 20 ; x++ ) {
+			for ( y = 0 ; y < 20 ; y++ ) {
+				if ( tab.m[x][y].type == "c" ) {
+
+					nbr++;
+
+				}
+			}
+		} if ( nbr === 0 ) {
+			for (x = 0 ; x < 20 ; x++ ) {
+				for ( y = 0 ; y < 20 ; y++ ) {
+					if ( tab.m[x][y].type == "p" ) {
+						if ( tab.m[tab.j.l+1][tab.j.c].coor == tab.m[x][y].coor ) {
+							if ( tab.m[x][y].etat == "f" ) {
+
+								tab.m[x][y].etat = "o";
+
+							} else if ( tab.m[x][y].etat == "o" ) {
+
+								tab.m[x][y].etat = "f";
+
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+	} else if ( tab.m[tab.j.l+1][tab.j.c].type == "ft" || tab.m[tab.j.l+1][tab.j.c].type == "v" && tab.m[tab.j.l+1][tab.j.c].typeo == "ft" ) {
+
+		tab.m[tab.j.l][tab.j.c].type = tab.m[tab.j.l][tab.j.c].typeo;
+		tab.m[tab.j.l][tab.j.c].poid = 0;
+		tab.j.l = tab.j.lo;
+		tab.j.c = tab.j.co;
+		tab.m[tab.j.l][tab.j.c].type = "j";
+		tab.m[tab.j.l][tab.j.c].poid = 1;
 
 	}
 

@@ -60,6 +60,20 @@ margin-top : 50px;
 top: 38.5%;
 left: 22.2%;
 
+}
+
+
+h1
+{
+	position: fixed;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	top: 15px;
+	height: 25%
+	width: 25%
+	color: blue;
+	text-shadow: 1px 1px white;
 
 
 }
