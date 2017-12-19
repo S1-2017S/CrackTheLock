@@ -14,7 +14,7 @@ To Do List :
 
 - Mettre en place la connexion avec le fichier "membre.json" (Anthony) X
 
-- Commencer à écrire des maps (alex) 
+- Commencer à écrire des maps (alex) X
 
 - Ecrire la requete "deplacer (anthony)X
 
@@ -24,16 +24,30 @@ To Do List :
 
 - Suivi du pseudo (Anthony) X
 
-- Changer la position des boutons de la page d'accueil (Isaac) 
+- Changer la position des boutons de la page d'accueil (Isaac) X
 
-- Trouver une image de levier (Isaac)
+- Trouver une image de levier (Isaac) X
 
 - Requete vers confirmation.html (alex)
 
-- coder porte de sortie (anthony)
+- coder porte de sortie (anthony) X
 
-- coder changement de map (anthony)
+- coder changement de map (anthony) X
 
-- coder fin de jeu (anthony)
+- coder fin de jeu (anthony) X
 
-- suivi du pseudo sur les pages manquantes
+- suivi du pseudo sur les pages manquantes ()
+
+- element de gameplay "collectible" (anthony)
+
+- element de gameplay "fosse-trape" (anthony)
+
+- mettre un boutton quitter le jeu (isaac)
+
+- mettre un boutton restart le niveau ()
+
+- continuer à écrire les maps (alex)
+
+- mettre un commentaire à chaque code du git ()
+
+- réécrire entierement la page de règles ()
