@@ -49,3 +49,5 @@ To Do List :
 - continuer à écrire les maps (alex)
 
 - mettre un commentaire à chaque code du git ()
+
+- réécrire entierement la page de règles ()
