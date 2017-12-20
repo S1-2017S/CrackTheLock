@@ -68,22 +68,20 @@ var trait = function (req, res, query) {
 		if ( tab.lv === 1 ) {
 
 			if ( rdm === 0 ) {
-
+				map = "2-4";
 			} else if ( rdm === 1 ) {
-
+				map = "2-4";
 			} else if ( rdm === 2 ) {
-
+				map = "2-4";
 			} else if ( rdm === 3 ) {
-
+				map = "2-4";
 			} else if ( rdm === 4 ) {
-
+				map = "2-4";
 			}
 
-//			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
-//			tab.lv = 1;
-//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(map),"UTF-8");
-//			marqueurs = conv(map);
-//			marqueurs.pseudo = query.pseudo;
+			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
+			tab.lv = 1;
+			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(map),"UTF-8");
 
 		} else if ( tab.lv === 2 ) {
 
