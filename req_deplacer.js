@@ -81,7 +81,7 @@ var trait = function (req, res, query) {
 
 			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
 			tab.lv = 1;
-			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(map),"UTF-8");
+			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 
 		} else if ( tab.lv === 2 ) {
 
@@ -99,7 +99,7 @@ var trait = function (req, res, query) {
 
 //			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
 //			tab.lv = 2;
-//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(map),"UTF-8");
+//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 //			marqueurs = conv(map);
 //			marqueurs.pseudo = query.pseudo;
 
@@ -119,7 +119,7 @@ var trait = function (req, res, query) {
 
 //			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
 //			tab.lv = 3;
-//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(map),"UTF-8");
+//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 //			marqueurs = conv(map);
 //			marqueurs.pseudo = query.pseudo;
 
@@ -139,7 +139,7 @@ var trait = function (req, res, query) {
 
 //			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
 //			tab.lv = 4;
-//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(map),"UTF-8");
+//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 //			marqueurs = conv(map);
 //			marqueurs.pseudo = query.pseudo;
 
