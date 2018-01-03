@@ -46,10 +46,12 @@ To Do List :
 
 - mettre un boutton restart le niveau (anthony) O
 
-- continuer à écrire les maps (alex)
+- continuer à écrire les maps (alex) O
 
 - mettre un commentaire à chaque code du git ()
 
 - réécrire entierement la page de règles ()
 
-- MAJ lucidchart (alex) O
+- MAJ lucidchart (alex) X
+
+- texte de fin de partie, mettre le marqueur ()
