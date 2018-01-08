@@ -152,6 +152,7 @@ var trait = function (req, res, query) {
 		}
 		marqueurs = conv(tab);
 		marqueurs.pseudo = query.pseudo;
+		marqueurs.niv = map;
 		page = page.supplant(marqueurs);
 
 		res.writeHead(200, {'Content-Type': 'text/html'});
@@ -164,6 +165,7 @@ var trait = function (req, res, query) {
 		
 		marqueurs = conv(tab);
 		marqueurs.pseudo = query.pseudo;
+		marqueurs.niv = query.niv;
 
 		page = page.supplant(marqueurs);
 
