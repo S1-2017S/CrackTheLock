@@ -39,11 +39,11 @@ var traite_requete = function (req, res) {
 	try {
 		switch (pathname) {
 			case '/':
-			case '/req_reset':
-				req_reset(req, res, query);
-				break;
 			case '/req_commencer':
 				req_commencer(req, res, query);
+				break;
+			case '/req_reset':
+				req_reset(req, res, query);
 				break;
 			case '/req_retour_accueil':
 				req_accueil(req, res, query);
@@ -78,10 +78,10 @@ var traite_requete = function (req, res) {
 			case '/req_quitter':
 				req_quitter(req, res, query);
 				break;
-/*			case '/req_retour_menu2':
-				req_retour_menu2(req, res, query);
-				break;
-*/			case '/req_retour_menu':
+				/*			case '/req_retour_menu2':
+							req_retour_menu2(req, res, query);
+							break;
+				 */			case '/req_retour_menu':
 				req_retour_menu(req, res, query);
 				break;
 			case '/req_deplacer':
