@@ -11,7 +11,7 @@
 
 	  <form action="/req_deplacer" method="GET">
 	<input type="hidden" name="pseudo" value="{pseudo}">
-	<input type="hidden" name="pseudo" value="{niv}">
+	<input type="hidden" name="niv" value="{niv}">
 	<div id="header">
 	<button name="dir" value="2" id="btnhaut" ><img src="haut.png"></button> 
 	
@@ -564,6 +564,16 @@
 
 
 <h1>pseudo = {pseudo}</h1>
+
+ 
+<form action="/req_reset" method="GET">
+	<input type="hidden" name="niv" value="{niv}">
+	<div id="header">
+
+	<button name="pseudo" value="{pseudo}" id="jouer" ><img src="refresh.png" ></button>
+	
+
+	</form>
 
 
 
