@@ -11,7 +11,7 @@ var trait = function (req, res, query) {
 	var map;
 	var niv;
 
-	niv = "2-5";
+	niv = "3-1";
 
 	map = JSON.parse(fs.readFileSync("map_" + niv + ".json","UTF-8"));
 
