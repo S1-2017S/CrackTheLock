@@ -19,6 +19,8 @@ var req_retour_menu = require("./req_retour_menu.js");
 var req_deplacer = require("./req_deplacer.js");
 var req_static = require("./req_static.js");
 var req_erreur = require("./req_erreur.js");
+var req_reset = require("./req_reset.js");
+//var req_retour_menu2 = require("./req_retour_menu2.js");
 
 var traite_requete = function (req, res) {
 
@@ -37,6 +39,9 @@ var traite_requete = function (req, res) {
 	try {
 		switch (pathname) {
 			case '/':
+			case '/req_reset':
+				req_reset(req, res, query);
+				break;
 			case '/req_commencer':
 				req_commencer(req, res, query);
 				break;
@@ -73,7 +78,10 @@ var traite_requete = function (req, res) {
 			case '/req_quitter':
 				req_quitter(req, res, query);
 				break;
-			case '/req_retour_menu':
+/*			case '/req_retour_menu2':
+				req_retour_menu2(req, res, query);
+				break;
+*/			case '/req_retour_menu':
 				req_retour_menu(req, res, query);
 				break;
 			case '/req_deplacer':
