@@ -12,6 +12,7 @@ var trait = function (req, res, query) {
 
 	marqueurs = {};
 	marqueurs.erreur = "";
+	marqueurs.fin = "Fin de partie. Vous êtes restez coincé dans le labyrinthe ! GAME OVER !
 	marqueurs.pseudo = "";
 	page = page.supplant(marqueurs);
 
