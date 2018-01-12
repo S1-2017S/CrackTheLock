@@ -1,3 +1,4 @@
+//Affiche la maps selection avec différent niveaux de difficulté
 "use strict";
 
 var fs = require("fs");
@@ -11,7 +12,7 @@ var trait = function (req, res, query) {
 	var map;
 	var niv;
 
-	niv = "3-1";
+	niv = "5-2";
 
 	map = JSON.parse(fs.readFileSync("map_" + niv + ".json","UTF-8"));
 

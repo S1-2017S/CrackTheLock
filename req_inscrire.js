@@ -1,3 +1,5 @@
+//Création du compte
+
 "use strict";
 
 var fs = require("fs");

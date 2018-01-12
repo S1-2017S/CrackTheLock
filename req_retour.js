@@ -1,3 +1,5 @@
+// Retour au menu a partir des rêgle  
+
 "use strict";
 
 var fs = require("fs");

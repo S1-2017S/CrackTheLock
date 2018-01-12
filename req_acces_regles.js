@@ -1,3 +1,4 @@
+// Envoi une requette pour ouvrire le fichier "regle.html"
 "use strict";
 
 var fs = require("fs");

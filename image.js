@@ -1,3 +1,4 @@
+// Cette fonction affiche toute les images de la maps
 "use strict"
 
 var conv = function (tab) {

@@ -1,3 +1,5 @@
+// Reset la maps a zero
+
 "use srtict"
 
 var fs = require("fs");
