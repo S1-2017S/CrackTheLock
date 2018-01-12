@@ -40,6 +40,15 @@ left: 75%;
 
 }
 
+#exit {
+
+position: fixed;
+		  margin-top : 182px;
+top: 0%;
+left: 75%;
+
+}
+
 #btnhaut {
 
 position: fixed;
