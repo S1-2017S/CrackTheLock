@@ -1,5 +1,38 @@
 html { 
-  background: url(regles4.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+background: url(regle4.png) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+
+}
+
+.images_petit {
+
+width:150px;
+height:150px;
+
+}
+
+#exit {
+
+position: fixed;
+		  margin-top : 0px;
+top: 40%;
+left: 60%;
+
+}
+
+h1
+{
+position: fixed;
+left: 15px;
+margin: 0px;
+padding: 0px;
+top: 15px;
+height: 25%
+			width: 25%
+			color: blue;
+		text-shadow: 1px 1px white;
+
+
+}

@@ -14,7 +14,7 @@ var trait = function (req, res, query) {
 	marqueurs = {};
 	marqueurs.erreur = "";
 	marqueurs.pseudo = query.pseudo;
-	marqueurs.fin = "Fin de partie. Vous êtes restez coincé dans le labyrinthe ! GAME OVER !";
+	marqueurs.fin = "Fin de partie. Vous êtes restez coincé dans le labyrinthe !";
 	page = page.supplant(marqueurs);
 
 	res.writeHead(200, {'Content-Type': 'text/html'});

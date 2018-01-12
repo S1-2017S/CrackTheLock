@@ -1,50 +1,63 @@
 html { 
-  background: url(connection.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+background: url(connect.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
 }
 
 body {
 
-	position: fixed;
-	font-size: 30px;
-	left: 735px;
-	margin: 0px;
-	padding: 0px;
-	font-size: 20px;
-	color: white;
-	text-shadow: 1px 1px black;
-	top: 170px;
-	width: 1000px;	
-	height: 1000px;
-	
+position: fixed;
+		  font-size: 30px;
+left: 735px;
+margin: 0px;
+padding: 0px;
+		 font-size: 20px;
+color: white;
+	   text-shadow: 1px 1px black;
+top: 170px;
+width: 1000px;	
+height: 1000px;
+
 }
 
 
 input[type="text"] {
 
-  background-color : #99CCFF; 
-  position: fixed;
-	
-	
+	background-color : #99CCFF; 
+position: fixed;
+
+
 
 }
+
+h1
+{
+position: fixed;
+left: 15px;
+margin: 0px;
+padding: 0px;
+top: 15px;
+height: 25%
+			width: 25%
+			color: blue;
+		text-shadow: 1px 1px white;
+
 
 }
 
 input[type="password"] {
 
-  background-color : #99CCFF; 
-  position: fixed;
-	
-	
+	background-color : #99CCFF; 
+position: fixed;
+
+
 }
 
 input[type="submit"] {
 
-  background-color : #99CCFF; 
-  position: fixed;
+	background-color : #99CCFF; 
+position: fixed;
 
 
 }

@@ -39,6 +39,7 @@ var trait = function (req, res, query) {
 			page = fs.readFileSync('menu.html', 'UTF-8');
 			marqueurs = {};
 			marqueurs.pseudo = query.pseudo;
+			marqueurs.fin = "";
 			page = page.supplant(marqueurs);
 		} else {
 			page = fs.readFileSync('connection.html', 'UTF-8');
