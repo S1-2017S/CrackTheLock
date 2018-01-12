@@ -48,7 +48,7 @@ To Do List :
 
 - continuer à écrire les maps (alex/anthony) O
 
-- mettre un commentaire à chaque code du git (alex)
+- mettre un commentaire à chaque code du git (alex) X
 
 - réécrire entierement la page de règles (issac) O
 
@@ -56,4 +56,4 @@ To Do List :
 
 - texte de fin de partie, mettre le marqueur (anthnoy) X
 
-- changer tout les fonds d'écrans (issac)
+- changer tout les fonds d'écrans (issac) X
