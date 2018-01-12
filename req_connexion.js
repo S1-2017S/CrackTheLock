@@ -1,3 +1,4 @@
+// Recupére la fiche du joueur avec son speudo et son password dans le fichier "membre.json" pour pouvoir se connecté
 "use strict";
 
 var fs = require("fs");

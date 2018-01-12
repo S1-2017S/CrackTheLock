@@ -1,3 +1,4 @@
+// Cette fonction deplace le joueur en bas
 "use strict"
 
 var deplace = function (req, res, query, fin) {

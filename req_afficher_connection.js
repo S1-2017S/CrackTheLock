@@ -1,3 +1,4 @@
+// Envoie une requette pour ouvire la page "connection.html"
 "use strict";
 
 var fs = require("fs");

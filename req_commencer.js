@@ -1,3 +1,4 @@
+// Envoi une requette pour ouvire la page "accueil.html"
 "use strict";
 
 var fs = require("fs");

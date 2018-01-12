@@ -1,3 +1,5 @@
+// Retour au menu a la fin du jeu
+
 "use strict";
 
 var fs = require("fs");

@@ -1,3 +1,4 @@
+// Retour a l'accueil
 "use strict";
  
  var fs = require("fs");
