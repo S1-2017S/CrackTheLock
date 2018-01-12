@@ -87,15 +87,15 @@ var trait = function (req, res, query) {
 		} else if ( tab.lv === 2 ) {
 
 			if ( rdm === 0 ) {
-
+				map = "3-4";
 			} else if ( rdm === 1 ) {
-
+				map = "";
 			} else if ( rdm === 2 ) {
-
+				map = "";
 			} else if ( rdm === 3 ) {
-
+				map = "";
 			} else if ( rdm === 4 ) {
-
+				map = "";
 			}
 
 //			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
@@ -107,15 +107,15 @@ var trait = function (req, res, query) {
 		} else if ( tab.lv === 3 ) {
 
 			if ( rdm === 0 ) {
-
+				map = "3-1";
 			} else if ( rdm === 1 ) {
-
+				map = "";
 			} else if ( rdm === 2 ) {
-
+				map = "";
 			} else if ( rdm === 3 ) {
-
+				map = "";
 			} else if ( rdm === 4 ) {
-
+				map = "";
 			}
 
 //			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
@@ -127,15 +127,15 @@ var trait = function (req, res, query) {
 		} else if ( tab.lv === 4 ) {
 
 			if ( rdm === 0 ) {
-
+				map = "3-2";
 			} else if ( rdm === 1 ) {
-
+				map = "3-3";
 			} else if ( rdm === 2 ) {
-
+				map = "5-2";
 			} else if ( rdm === 3 ) {
-
+				map = "";
 			} else if ( rdm === 4 ) {
-
+				map = "";
 			}
 
 //			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
