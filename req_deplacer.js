@@ -71,13 +71,13 @@ var trait = function (req, res, query) {
 			if ( rdm === 0 ) {
 				map = "2-4";
 			} else if ( rdm === 1 ) {
-				map = "2-4";
+				map = "";
 			} else if ( rdm === 2 ) {
-				map = "2-4";
+				map = "";
 			} else if ( rdm === 3 ) {
-				map = "2-4";
+				map = "";
 			} else if ( rdm === 4 ) {
-				map = "2-4";
+				map = "";
 			}
 
 			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
