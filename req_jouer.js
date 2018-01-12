@@ -1,4 +1,4 @@
-//Affiche la maps selection avec différent niveaux de difficulté
+//Affiche la maps selection avec différent niveaux de difficulté.
 "use strict";
 
 var fs = require("fs");

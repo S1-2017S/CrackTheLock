@@ -1,4 +1,4 @@
-// Quitte la parti avec message de fin
+// Quitte la parti avec message de fin.
 "use strict";
 
 var fs = require("fs");

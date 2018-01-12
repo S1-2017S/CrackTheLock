@@ -1,4 +1,4 @@
-// Se déplacer dans le fichier jeu grace aux fléches, qui permettent d'actionner les différents mouvements 
+// Se déplacer dans le fichier jeu grace aux fléches, qui permettent d'actionner les différents mouvements. 
 "use srtict"
 
 var fs = require("fs");
