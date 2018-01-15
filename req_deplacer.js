@@ -63,7 +63,7 @@ var trait = function (req, res, query) {
 		console.log("lv = " + tab.lv);
 		console.log("fin = " + fin);
 		fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
-		rdm = Math.floor(Math.random()*5);
+		rdm = Math.floor(Math.random()*4);
 		rdm = Number(rdm);
 
 		if ( tab.lv === 1 ) {
@@ -71,13 +71,11 @@ var trait = function (req, res, query) {
 			if ( rdm === 0 ) {
 				map = "2-4";
 			} else if ( rdm === 1 ) {
-				map = "";
+				map = "5-3";
 			} else if ( rdm === 2 ) {
-				map = "";
+				map = "5-5";
 			} else if ( rdm === 3 ) {
-				map = "";
-			} else if ( rdm === 4 ) {
-				map = "";
+				map = "3-9";
 			}
 
 			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
@@ -89,60 +87,48 @@ var trait = function (req, res, query) {
 			if ( rdm === 0 ) {
 				map = "3-4";
 			} else if ( rdm === 1 ) {
-				map = "";
+				map = "5-6";
 			} else if ( rdm === 2 ) {
-				map = "";
+				map = "3-1";
 			} else if ( rdm === 3 ) {
-				map = "";
-			} else if ( rdm === 4 ) {
-				map = "";
+				map = "3-6";
 			}
 
-//			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
-//			tab.lv = 2;
-//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
-//			marqueurs = conv(map);
-//			marqueurs.pseudo = query.pseudo;
+			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
+			tab.lv = 2;
+			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 
 		} else if ( tab.lv === 3 ) {
 
 			if ( rdm === 0 ) {
-				map = "3-1";
+				map = "3-2";
 			} else if ( rdm === 1 ) {
-				map = "";
+				map = "3-7";
 			} else if ( rdm === 2 ) {
-				map = "";
+				map = "3-8";
 			} else if ( rdm === 3 ) {
-				map = "";
-			} else if ( rdm === 4 ) {
-				map = "";
+				map = "5-8";
 			}
 
-//			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
-//			tab.lv = 3;
-//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
-//			marqueurs = conv(map);
-//			marqueurs.pseudo = query.pseudo;
+			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
+			tab.lv = 3;
+			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 
 		} else if ( tab.lv === 4 ) {
 
 			if ( rdm === 0 ) {
-				map = "3-2";
+				map = "3-5";
 			} else if ( rdm === 1 ) {
 				map = "3-3";
 			} else if ( rdm === 2 ) {
 				map = "5-2";
 			} else if ( rdm === 3 ) {
-				map = "";
-			} else if ( rdm === 4 ) {
-				map = "";
+				map = "5-9";
 			}
 
-//			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
-//			tab.lv = 4;
-//			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
-//			marqueurs = conv(map);
-//			marqueurs.pseudo = query.pseudo;
+			tab = JSON.parse(fs.readFileSync("map_" + map + ".json","UTF-8"));
+			tab.lv = 4;
+			fs.writeFileSync("map_" + query.pseudo + ".json",JSON.stringify(tab),"UTF-8");
 
 		} else if ( tab.lv === 5 ) {
 
