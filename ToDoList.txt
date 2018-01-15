@@ -42,7 +42,7 @@ To Do List :
 
 - element de gameplay "fosse-trape" (anthony) X
 
-- mettre un boutton quitter le jeu (anthony) O
+- mettre un boutton quitter le jeu (anthony) X
 
 - mettre un boutton restart le niveau (anthony) X
 
@@ -50,10 +50,10 @@ To Do List :
 
 - mettre un commentaire à chaque code du git (alex) X
 
-- réécrire entierement la page de règles (issac) O
+- réécrire entierement la page de règles (alex) X
 
 - MAJ lucidchart (alex) X
 
 - texte de fin de partie, mettre le marqueur (anthnoy) X
 
-- changer tout les fonds d'écrans (issac) X
+- changer tout les fonds d'écrans (alex/anthony) X
